@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechsCube | Coming Soon</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #0e0e0e;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .logo {
+            max-width: 200px;
+            width: 70%;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .headline {
+            font-size: 38px;
+            font-weight: 600;
+            margin-top: 20px;
+            color: #ff7953;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: slideUp 1.5s forwards;
+        }
+
+        .subtext {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #cfcfcf;
+            animation: slideUp 2s forwards;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 14px;
+            color: #656565;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @media(max-width: 768px) {
+            .headline { font-size: 28px; }
+            .subtext { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo -->
+    <img src="./logo.jpeg" alt="TechsCube Logo" class="logo">
+
+    <!-- Text -->
+    <div class="headline">Coming Soon</div>
+    <div class="subtext">We are building something awesome for you.</div>
+
+    <!-- Footer -->
+    <div class="footer">© 2025 TechsCube. All Rights Reserved.</div>
+
+</body>
+</html>
